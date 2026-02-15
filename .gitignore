@@ -1,0 +1,10 @@
+CFG/
+BitcoinHeistData.csv
+dataset_fraud.xlsx
+Excel_All_Features.csv
+PDF_All_Features.csv
+Word_All_Features.csv
+RT_IOT2022
+
+eda_*
+*.docx
