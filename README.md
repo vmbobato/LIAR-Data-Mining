@@ -8,7 +8,7 @@ The project focuses on understanding patterns in truthfulness, evaluating modeli
 
 ---
 
-## Dataset  
+## Dataset
 
 Source: PolitiFact Fact-Checking Archive  
 Introduced in: Wang, W. Y. (2017). “Liar, Liar Pants on Fire”
