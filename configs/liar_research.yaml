@@ -1,0 +1,48 @@
+project_root: "/mnt/c/Users/vinib/OneDrive/Desktop/CSCE 676/Project"
+raw_data:
+  train: "data/raw/train.tsv"
+  valid: "data/raw/valid.tsv"
+  test: "data/raw/test.tsv"
+  processed_fallback: "data/processed/processed_liar.csv"
+
+research_root: "."
+paths:
+  interim_dir: "data/interim"
+  processed_dir: "data/processed"
+  models_dir: "models"
+  figures_dir: "reports/figures"
+
+labels:
+  low_truth: ["false", "pants-fire", "barely-true"]
+  medium_truth: ["half-true"]
+  high_truth: ["mostly-true", "true"]
+
+text:
+  min_df: 5
+  max_features: 15000
+  ngram_min: 1
+  ngram_max: 2
+
+graph:
+  dimensions: 32
+  walk_length: 20
+  num_walks: 100
+  workers: 2
+  p: 1.0
+  q: 1.0
+
+clustering:
+  n_clusters: 8
+  random_state: 42
+
+lsh:
+  num_perm: 128
+  threshold: 0.75
+
+anomaly:
+  contamination: 0.03
+  random_state: 42
+
+stream:
+  time_column: "year_proxy"
+  min_period_count: 20
