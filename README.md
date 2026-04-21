@@ -23,8 +23,7 @@ Primary LIAR files:
 ## Repository Structure
 
 - `configs/`: central pipeline configuration (`configs/liar_research.yaml`)
-- `scripts/`: runnable analysis pipeline scripts (`01` to `09`)
-  - advanced modeling scripts: `10`, `11`, `12`, `13`
+- `scripts/`: runnable analysis pipeline scripts (`01` to `13`)
 - `src/liar_mining/`: shared utilities for I/O, preprocessing, and modeling
 - `notebooks/`: EDA and research analysis notebooks
 - `data/interim/`: intermediate generated artifacts
@@ -37,7 +36,15 @@ Primary LIAR files:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements_liar_research.txt
+pip install -r requirements.txt
+```
+
+Windows (PowerShell):
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r .\requirements.txt
 ```
 
 ## Pipeline Execution Order
@@ -57,10 +64,16 @@ python scripts/08_stream_drift.py
 python scripts/09_fusion_model.py
 ```
 
-Or run:
+Or run the full pipeline:
 
 ```bash
 bash scripts/run_pipeline.sh
+```
+
+Windows:
+
+```powershell
+scripts\run_pipeline.bat
 ```
 
 Optional dense embeddings:
@@ -99,6 +112,9 @@ python scripts/13_probability_ensemble.py
 - Anomaly Detection: Isolation Forest on fused features
 - Stream Mining: split-based drift analysis
 - Predictive Modeling: text-only vs text+graph low-truth classification
+- Transformer Fine-Tuning: sequence classification on LIAR statements
+- Tuned Tabular Fusion: boosted tree model over text+graph+metadata
+- Ensemble Optimization: weighted probability fusion + threshold tuning
 
 ## Key Outputs
 
@@ -127,5 +143,6 @@ python scripts/13_probability_ensemble.py
 ## Notes
 
 - The pipeline is modular; each script can run independently.
+- `scripts/run_pipeline.*` runs all stages (`01` to `13`) including compute-heavy transformer fine-tuning.
 - Existing original project files are preserved.
 
