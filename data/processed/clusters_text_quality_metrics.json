@@ -1,0 +1,9 @@
+{
+  "embedding_source": "text",
+  "n_rows": 12791,
+  "n_features": 9991,
+  "n_clusters": 8,
+  "silhouette": 0.027908140793442726,
+  "calinski_harabasz": 199.68508843849693,
+  "davies_bouldin": 4.5288084446328
+}

@@ -1,0 +1,40 @@
+{
+  "fixed_split_train_test": {
+    "text_only": {
+      "accuracy": 0.6124704025256511,
+      "precision": 0.5511551155115512,
+      "recall": 0.6039783001808319,
+      "f1": 0.5763589301121657,
+      "roc_auc": 0.6440500250733205
+    },
+    "text_plus_graph": {
+      "accuracy": 0.6219415943172849,
+      "precision": 0.5616666666666666,
+      "recall": 0.6094032549728752,
+      "f1": 0.5845620121422377,
+      "roc_auc": 0.6584887119404723
+    }
+  },
+  "speaker_disjoint_split": {
+    "text_only": {
+      "accuracy": 0.6042593769866497,
+      "precision": 0.5736579275905118,
+      "recall": 0.6205266711681297,
+      "f1": 0.5961725591955888,
+      "roc_auc": 0.6504822851210428
+    },
+    "text_plus_graph": {
+      "accuracy": 0.6157024793388429,
+      "precision": 0.5847880299251871,
+      "recall": 0.6333558406482107,
+      "f1": 0.6081037277147487,
+      "roc_auc": 0.6587617326982621
+    }
+  },
+  "notes": {
+    "target": "is_low_truth",
+    "text_file": "text_embeddings_sentence_all-MiniLM-L6-v2.parquet",
+    "speaker_disjoint_test_size": 0.2,
+    "classifier": "logistic_regression"
+  }
+}

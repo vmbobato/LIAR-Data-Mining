@@ -1,0 +1,40 @@
+{
+  "fixed_split_train_test": {
+    "text_only": {
+      "accuracy": 0.6156274664561957,
+      "precision": 0.5517241379310345,
+      "recall": 0.6365280289330922,
+      "f1": 0.5910999160369438,
+      "roc_auc": 0.6527421095020287
+    },
+    "text_plus_graph": {
+      "accuracy": 0.6282557221783741,
+      "precision": 0.5676567656765676,
+      "recall": 0.6220614828209765,
+      "f1": 0.5936151855047455,
+      "roc_auc": 0.6743634162525769
+    }
+  },
+  "speaker_disjoint_split": {
+    "text_only": {
+      "accuracy": 0.5979020979020979,
+      "precision": 0.5669975186104218,
+      "recall": 0.6171505739365294,
+      "f1": 0.5910119624959587,
+      "roc_auc": 0.6416109559931301
+    },
+    "text_plus_graph": {
+      "accuracy": 0.6115702479338843,
+      "precision": 0.5803848541278709,
+      "recall": 0.6313301823092505,
+      "f1": 0.6047865459249676,
+      "roc_auc": 0.6569522256895652
+    }
+  },
+  "notes": {
+    "target": "is_low_truth",
+    "text_file": "text_embeddings_tfidf.parquet",
+    "speaker_disjoint_test_size": 0.2,
+    "classifier": "logistic_regression"
+  }
+}

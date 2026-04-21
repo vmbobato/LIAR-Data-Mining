@@ -1,0 +1,40 @@
+{
+  "fixed_split_train_test": {
+    "text_only": {
+      "accuracy": 0.5816890292028414,
+      "precision": 0.5186991869918699,
+      "recall": 0.5768535262206148,
+      "f1": 0.5462328767123288,
+      "roc_auc": 0.6277498341108596
+    },
+    "text_plus_graph": {
+      "accuracy": 0.6250986582478295,
+      "precision": 0.5679442508710801,
+      "recall": 0.5895117540687161,
+      "f1": 0.5785270629991127,
+      "roc_auc": 0.6694297972353499
+    }
+  },
+  "speaker_disjoint_split": {
+    "text_only": {
+      "accuracy": 0.59631277813096,
+      "precision": 0.5756272401433692,
+      "recall": 0.5422012153950033,
+      "f1": 0.5584144645340751,
+      "roc_auc": 0.634410237381203
+    },
+    "text_plus_graph": {
+      "accuracy": 0.6093452002542912,
+      "precision": 0.5906474820143884,
+      "recall": 0.5543551654287644,
+      "f1": 0.5719261581330547,
+      "roc_auc": 0.6513752780464461
+    }
+  },
+  "notes": {
+    "target": "is_low_truth",
+    "text_file": "text_embeddings_tfidf.parquet",
+    "speaker_disjoint_test_size": 0.2,
+    "classifier": "gradient_boosting"
+  }
+}

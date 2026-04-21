@@ -1,0 +1,4 @@
+split,low_truth_rate
+test,0.43646408839779005
+train,0.43828125
+valid,0.4797507788161994

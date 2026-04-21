@@ -1,0 +1,5 @@
+setting,model,tn,fp,fn,tp
+fixed_split_train_test,text_only,418,296,234,319
+fixed_split_train_test,text_plus_graph,466,248,227,326
+speaker_disjoint_split,text_only,1073,592,678,803
+speaker_disjoint_split,text_plus_graph,1096,569,660,821

@@ -1,0 +1,10 @@
+split_a,split_b,feature,js_divergence
+train,valid,label,0.0015414041721889702
+train,valid,party_grouped,0.000913398057671742
+train,valid,state_clean,0.0046329166203630135
+valid,test,label,0.0018122417956285223
+valid,test,party_grouped,0.0009341226635987212
+valid,test,state_clean,0.00629411917486005
+train,test,label,0.0001739357524855479
+train,test,party_grouped,0.00012122655371653323
+train,test,state_clean,0.004754689117942354

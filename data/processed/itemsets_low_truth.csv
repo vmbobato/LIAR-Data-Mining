@@ -1,0 +1,355 @@
+support,itemsets,itemset_size
+0.3717518119144423,frozenset({'label=barely-true'}),1
+0.44316775676153436,frozenset({'label=false'}),1
+0.18508043132402333,frozenset({'label=pants-fire'}),1
+0.2481880855577161,frozenset({'party=democrat'}),1
+0.035000883860703554,frozenset({'party=non-party-role'}),1
+0.4986742089446703,frozenset({'party=republican'}),1
+0.013434682694007424,frozenset({'party=third-party'}),1
+0.2047021389429026,frozenset({'party=unknown'}),1
+0.01714689764893053,frozenset({'state=Arizona'}),1
+0.012550821990454304,frozenset({'state=California'}),1
+0.08997701962170762,frozenset({'state=Florida'}),1
+0.03570797242354605,frozenset({'state=Georgia'}),1
+0.03447056743857168,frozenset({'state=Illinois'}),1
+0.018030758352483647,frozenset({'state=Massachusetts'}),1
+0.019975251900300514,frozenset({'state=New Jersey'}),1
+0.07194626126922397,frozenset({'state=New York'}),1
+0.03570797242354605,frozenset({'state=Ohio'}),1
+0.022096517588828,frozenset({'state=Oregon'}),1
+0.013788226975428673,frozenset({'state=Other'}),1
+0.010429556301926816,frozenset({'state=Pennsylvania'}),1
+0.03429379529786106,frozenset({'state=Rhode Island'}),1
+0.10040657592363443,frozenset({'state=Texas'}),1
+0.2513699840905073,frozenset({'state=Unknown'}),1
+0.04118790878557539,frozenset({'state=Virginia'}),1
+0.08007777974191267,frozenset({'state=Wisconsin'}),1
+0.02598550468446173,frozenset({'subject=abortion'}),1
+0.018737846915326144,frozenset({'subject=campaign-finance'}),1
+0.07053208414353898,frozenset({'subject=candidates-biography'}),1
+0.017500441930351777,frozenset({'subject=children'}),1
+0.01184373342761181,frozenset({'subject=city-government'}),1
+0.015732720523245536,frozenset({'subject=climate-change'}),1
+0.0176772140710624,frozenset({'subject=congress'}),1
+0.012550821990454304,frozenset({'subject=corporations'}),1
+0.020505568322432385,frozenset({'subject=corrections-and-updates'}),1
+0.04012727594131165,frozenset({'subject=crime'}),1
+0.020505568322432385,frozenset({'subject=criminal-justice'}),1
+0.018030758352483647,frozenset({'subject=deficit'}),1
+0.09386600671734134,frozenset({'subject=economy'}),1
+0.062047021389429025,frozenset({'subject=education'}),1
+0.05904189499734842,frozenset({'subject=elections'}),1
+0.04030404808202227,frozenset({'subject=energy'}),1
+0.03553120028283543,frozenset({'subject=environment'}),1
+0.0176772140710624,frozenset({'subject=ethics'}),1
+0.010076012020505568,frozenset({'subject=families'}),1
+0.06805727417359024,frozenset({'subject=federal-budget'}),1
+0.010252784161216192,frozenset({'subject=financial-regulation'}),1
+0.05161746508750221,frozenset({'subject=foreign-policy'}),1
+0.012550821990454304,frozenset({'subject=gays-and-lesbians'}),1
+0.014848859819692417,frozenset({'subject=government-efficiency'}),1
+0.01714689764893053,frozenset({'subject=government-regulation'}),1
+0.027753226091567967,frozenset({'subject=guns'}),1
+0.13576100406575925,frozenset({'subject=health-care'}),1
+0.042955630192681636,frozenset({'subject=history'}),1
+0.05639031288668906,frozenset({'subject=immigration'}),1
+0.0132579105532968,frozenset({'subject=income'}),1
+0.010959872724058689,frozenset({'subject=iraq'}),1
+0.027753226091567967,frozenset({'subject=job-accomplishments'}),1
+0.06346119851511402,frozenset({'subject=jobs'}),1
+0.022803606151670496,frozenset({'subject=labor'}),1
+0.035000883860703554,frozenset({'subject=legal-issues'}),1
+0.013434682694007424,frozenset({'subject=market-regulation'}),1
+0.024924871840197985,frozenset({'subject=medicare'}),1
+0.02156620116669613,frozenset({'subject=message-machine'}),1
+0.028813858935831712,frozenset({'subject=message-machine-2012'}),1
+0.02863708679512109,frozenset({'subject=military'}),1
+0.012904366271875552,frozenset({'subject=polls'}),1
+0.01414177125684992,frozenset({'subject=poverty'}),1
+0.022450061870249248,frozenset({'subject=public-health'}),1
+0.011136644864769313,frozenset({'subject=public-safety'}),1
+0.022450061870249248,frozenset({'subject=pundits'}),1
+0.020505568322432385,frozenset({'subject=religion'}),1
+0.015379176241824288,frozenset({'subject=social-security'}),1
+0.06593600848506276,frozenset({'subject=state-budget'}),1
+0.02174297330740675,frozenset({'subject=state-finances'}),1
+0.018030758352483647,frozenset({'subject=states'}),1
+0.02121265688527488,frozenset({'subject=stimulus'}),1
+0.09492663956160509,frozenset({'subject=taxes'}),1
+0.03358670673501856,frozenset({'subject=terrorism'}),1
+0.0265158211065936,frozenset({'subject=transportation'}),1
+0.02156620116669613,frozenset({'subject=voting-record'}),1
+0.01944493547816864,frozenset({'subject=women'}),1
+0.023157150433091744,frozenset({'subject=workers'}),1
+0.10358847445642566,"frozenset({'party=democrat', 'label=barely-true'})",2
+0.013964999116139297,"frozenset({'party=non-party-role', 'label=barely-true'})",2
+0.18755524129397208,"frozenset({'party=republican', 'label=barely-true'})",2
+0.06080961640445466,"frozenset({'party=unknown', 'label=barely-true'})",2
+0.04154145306699664,"frozenset({'state=Florida', 'label=barely-true'})",2
+0.014848859819692417,"frozenset({'state=Georgia', 'label=barely-true'})",2
+0.015025631960403041,"frozenset({'state=Illinois', 'label=barely-true'})",2
+0.02386423899593424,"frozenset({'state=New York', 'label=barely-true'})",2
+0.013434682694007424,"frozenset({'state=Ohio', 'label=barely-true'})",2
+0.01184373342761181,"frozenset({'state=Rhode Island', 'label=barely-true'})",2
+0.04154145306699664,"frozenset({'state=Texas', 'label=barely-true'})",2
+0.08060809616404455,"frozenset({'state=Unknown', 'label=barely-true'})",2
+0.015202404101113665,"frozenset({'state=Virginia', 'label=barely-true'})",2
+0.02863708679512109,"frozenset({'state=Wisconsin', 'label=barely-true'})",2
+0.02439455541806611,"frozenset({'subject=candidates-biography', 'label=barely-true'})",2
+0.015379176241824288,"frozenset({'subject=crime', 'label=barely-true'})",2
+0.03871309881562666,"frozenset({'subject=economy', 'label=barely-true'})",2
+0.027576453950857345,"frozenset({'subject=education', 'label=barely-true'})",2
+0.015379176241824288,"frozenset({'subject=elections', 'label=barely-true'})",2
+0.015379176241824288,"frozenset({'subject=energy', 'label=barely-true'})",2
+0.012727594131164928,"frozenset({'subject=environment', 'label=barely-true'})",2
+0.028106770372989216,"frozenset({'subject=federal-budget', 'label=barely-true'})",2
+0.020328796181721762,"frozenset({'subject=foreign-policy', 'label=barely-true'})",2
+0.05073360438394909,"frozenset({'subject=health-care', 'label=barely-true'})",2
+0.012727594131164928,"frozenset({'subject=history', 'label=barely-true'})",2
+0.02121265688527488,"frozenset({'subject=immigration', 'label=barely-true'})",2
+0.0265158211065936,"frozenset({'subject=jobs', 'label=barely-true'})",2
+0.012197277709033056,"frozenset({'subject=legal-issues', 'label=barely-true'})",2
+0.013434682694007424,"frozenset({'subject=message-machine-2012', 'label=barely-true'})",2
+0.010783100583348065,"frozenset({'subject=military', 'label=barely-true'})",2
+0.026162276825172352,"frozenset({'subject=state-budget', 'label=barely-true'})",2
+0.03959695951917978,"frozenset({'subject=taxes', 'label=barely-true'})",2
+0.012020505568322432,"frozenset({'subject=terrorism', 'label=barely-true'})",2
+0.010959872724058689,"frozenset({'subject=transportation', 'label=barely-true'})",2
+0.01060632844263744,"frozenset({'subject=voting-record', 'label=barely-true'})",2
+0.010429556301926816,"frozenset({'subject=women', 'label=barely-true'})",2
+0.012550821990454304,"frozenset({'subject=workers', 'label=barely-true'})",2
+0.111896765069825,"frozenset({'label=false', 'party=democrat'})",2
+0.01590949266395616,"frozenset({'label=false', 'party=non-party-role'})",2
+0.22962701078310058,"frozenset({'party=republican', 'label=false'})",2
+0.07990100760120206,"frozenset({'label=false', 'party=unknown'})",2
+0.038359554534205406,"frozenset({'label=false', 'state=Florida'})",2
+0.015732720523245536,"frozenset({'state=Georgia', 'label=false'})",2
+0.01732366978964115,"frozenset({'label=false', 'state=Illinois'})",2
+0.010252784161216192,"frozenset({'label=false', 'state=New Jersey'})",2
+0.034117023157150435,"frozenset({'label=false', 'state=New York'})",2
+0.01590949266395616,"frozenset({'label=false', 'state=Ohio'})",2
+0.012550821990454304,"frozenset({'label=false', 'state=Oregon'})",2
+0.01626303694537741,"frozenset({'label=false', 'state=Rhode Island'})",2
+0.040657592363443525,"frozenset({'state=Texas', 'label=false'})",2
+0.09881562665723882,"frozenset({'state=Unknown', 'label=false'})",2
+0.02174297330740675,"frozenset({'state=Virginia', 'label=false'})",2
+0.038536326674916035,"frozenset({'label=false', 'state=Wisconsin'})",2
+0.011490189146190561,"frozenset({'label=false', 'subject=abortion'})",2
+0.029344175357963586,"frozenset({'label=false', 'subject=candidates-biography'})",2
+0.016086264804666784,"frozenset({'label=false', 'subject=crime'})",2
+0.04224854162983914,"frozenset({'label=false', 'subject=economy'})",2
+0.02598550468446173,"frozenset({'subject=education', 'label=false'})",2
+0.03040480820222733,"frozenset({'label=false', 'subject=elections'})",2
+0.01856107477461552,"frozenset({'label=false', 'subject=energy'})",2
+0.01626303694537741,"frozenset({'subject=environment', 'label=false'})",2
+0.03234930175004419,"frozenset({'label=false', 'subject=federal-budget'})",2
+0.021035884744564255,"frozenset({'label=false', 'subject=foreign-policy'})",2
+0.012550821990454304,"frozenset({'label=false', 'subject=guns'})",2
+0.05851157857521654,"frozenset({'label=false', 'subject=health-care'})",2
+0.019621707618879266,"frozenset({'subject=history', 'label=false'})",2
+0.023510694714512993,"frozenset({'label=false', 'subject=immigration'})",2
+0.014318543397560545,"frozenset({'label=false', 'subject=job-accomplishments'})",2
+0.028990631076542338,"frozenset({'label=false', 'subject=jobs'})",2
+0.010252784161216192,"frozenset({'label=false', 'subject=labor'})",2
+0.01714689764893053,"frozenset({'subject=legal-issues', 'label=false'})",2
+0.011490189146190561,"frozenset({'label=false', 'subject=medicare'})",2
+0.011313417005479937,"frozenset({'label=false', 'subject=military'})",2
+0.010252784161216192,"frozenset({'label=false', 'subject=public-health'})",2
+0.029874491780095457,"frozenset({'subject=state-budget', 'label=false'})",2
+0.010252784161216192,"frozenset({'label=false', 'subject=state-finances'})",2
+0.040657592363443525,"frozenset({'label=false', 'subject=taxes'})",2
+0.014318543397560545,"frozenset({'subject=terrorism', 'label=false'})",2
+0.012020505568322432,"frozenset({'label=false', 'subject=transportation'})",2
+0.03270284603146544,"frozenset({'party=democrat', 'label=pants-fire'})",2
+0.08149195686759766,"frozenset({'party=republican', 'label=pants-fire'})",2
+0.06399151493724589,"frozenset({'party=unknown', 'label=pants-fire'})",2
+0.010076012020505568,"frozenset({'label=pants-fire', 'state=Florida'})",2
+0.013964999116139297,"frozenset({'state=New York', 'label=pants-fire'})",2
+0.018207530493194273,"frozenset({'state=Texas', 'label=pants-fire'})",2
+0.07194626126922397,"frozenset({'state=Unknown', 'label=pants-fire'})",2
+0.012904366271875552,"frozenset({'state=Wisconsin', 'label=pants-fire'})",2
+0.01679335336750928,"frozenset({'label=pants-fire', 'subject=candidates-biography'})",2
+0.012904366271875552,"frozenset({'subject=economy', 'label=pants-fire'})",2
+0.0132579105532968,"frozenset({'label=pants-fire', 'subject=elections'})",2
+0.010252784161216192,"frozenset({'label=pants-fire', 'subject=foreign-policy'})",2
+0.0265158211065936,"frozenset({'subject=health-care', 'label=pants-fire'})",2
+0.01060632844263744,"frozenset({'subject=history', 'label=pants-fire'})",2
+0.011666961286901185,"frozenset({'label=pants-fire', 'subject=immigration'})",2
+0.014672087678981793,"frozenset({'label=pants-fire', 'subject=taxes'})",2
+0.0265158211065936,"frozenset({'party=democrat', 'state=Florida'})",2
+0.03217252960933357,"frozenset({'party=democrat', 'state=Illinois'})",2
+0.017853986211773025,"frozenset({'party=democrat', 'state=New York'})",2
+0.014848859819692417,"frozenset({'party=democrat', 'state=Rhode Island'})",2
+0.02121265688527488,"frozenset({'state=Texas', 'party=democrat'})",2
+0.027222909669436097,"frozenset({'state=Unknown', 'party=democrat'})",2
+0.01679335336750928,"frozenset({'state=Virginia', 'party=democrat'})",2
+0.02439455541806611,"frozenset({'party=democrat', 'state=Wisconsin'})",2
+0.01732366978964115,"frozenset({'party=democrat', 'subject=candidates-biography'})",2
+0.012904366271875552,"frozenset({'party=democrat', 'subject=crime'})",2
+0.02333392257380237,"frozenset({'party=democrat', 'subject=economy'})",2
+0.01856107477461552,"frozenset({'subject=education', 'party=democrat'})",2
+0.014672087678981793,"frozenset({'party=democrat', 'subject=elections'})",2
+0.0176772140710624,"frozenset({'party=democrat', 'subject=federal-budget'})",2
+0.030758352483648575,"frozenset({'party=democrat', 'subject=health-care'})",2
+0.012550821990454304,"frozenset({'party=democrat', 'subject=job-accomplishments'})",2
+0.01979847975958989,"frozenset({'party=democrat', 'subject=jobs'})",2
+0.010252784161216192,"frozenset({'subject=legal-issues', 'party=democrat'})",2
+0.022450061870249248,"frozenset({'subject=state-budget', 'party=democrat'})",2
+0.02439455541806611,"frozenset({'party=democrat', 'subject=taxes'})",2
+0.013964999116139297,"frozenset({'state=Unknown', 'party=non-party-role'})",2
+0.01714689764893053,"frozenset({'party=republican', 'state=Arizona'})",2
+0.055506452183135935,"frozenset({'party=republican', 'state=Florida'})",2
+0.02333392257380237,"frozenset({'party=republican', 'state=Georgia'})",2
+0.015732720523245536,"frozenset({'party=republican', 'state=Massachusetts'})",2
+0.011490189146190561,"frozenset({'party=republican', 'state=New Jersey'})",2
+0.050203287961817215,"frozenset({'party=republican', 'state=New York'})",2
+0.02421778327735549,"frozenset({'party=republican', 'state=Ohio'})",2
+0.07159271698780273,"frozenset({'party=republican', 'state=Texas'})",2
+0.05939543927876967,"frozenset({'state=Unknown', 'party=republican'})",2
+0.021919745448117377,"frozenset({'party=republican', 'state=Virginia'})",2
+0.04366271875552413,"frozenset({'party=republican', 'state=Wisconsin'})",2
+0.0132579105532968,"frozenset({'party=republican', 'subject=abortion'})",2
+0.03570797242354605,"frozenset({'party=republican', 'subject=candidates-biography'})",2
+0.010252784161216192,"frozenset({'party=republican', 'subject=climate-change'})",2
+0.011136644864769313,"frozenset({'party=republican', 'subject=corrections-and-updates'})",2
+0.015732720523245536,"frozenset({'party=republican', 'subject=crime'})",2
+0.011313417005479937,"frozenset({'party=republican', 'subject=deficit'})",2
+0.052324553650344705,"frozenset({'party=republican', 'subject=economy'})",2
+0.027929998232278593,"frozenset({'party=republican', 'subject=education'})",2
+0.029874491780095457,"frozenset({'party=republican', 'subject=elections'})",2
+0.02174297330740675,"frozenset({'party=republican', 'subject=energy'})",2
+0.017500441930351777,"frozenset({'party=republican', 'subject=environment'})",2
+0.04189499734841789,"frozenset({'party=republican', 'subject=federal-budget'})",2
+0.03040480820222733,"frozenset({'party=republican', 'subject=foreign-policy'})",2
+0.010076012020505568,"frozenset({'party=republican', 'subject=guns'})",2
+0.07495138766130457,"frozenset({'party=republican', 'subject=health-care'})",2
+0.02156620116669613,"frozenset({'party=republican', 'subject=history'})",2
+0.03676860526780979,"frozenset({'party=republican', 'subject=immigration'})",2
+0.01237404984974368,"frozenset({'party=republican', 'subject=job-accomplishments'})",2
+0.0309351246243592,"frozenset({'party=republican', 'subject=jobs'})",2
+0.013081138412586176,"frozenset({'subject=legal-issues', 'party=republican'})",2
+0.012904366271875552,"frozenset({'party=republican', 'subject=medicare'})",2
+0.01237404984974368,"frozenset({'party=republican', 'subject=message-machine'})",2
+0.014672087678981793,"frozenset({'party=republican', 'subject=military'})",2
+0.03376347887572918,"frozenset({'party=republican', 'subject=state-budget'})",2
+0.01060632844263744,"frozenset({'party=republican', 'subject=state-finances'})",2
+0.014495315538271169,"frozenset({'party=republican', 'subject=stimulus'})",2
+0.05161746508750221,"frozenset({'party=republican', 'subject=taxes'})",2
+0.02156620116669613,"frozenset({'subject=terrorism', 'party=republican'})",2
+0.01060632844263744,"frozenset({'party=republican', 'subject=transportation'})",2
+0.011313417005479937,"frozenset({'party=republican', 'subject=voting-record'})",2
+0.14901891461905603,"frozenset({'state=Unknown', 'party=unknown'})",2
+0.014848859819692417,"frozenset({'party=unknown', 'subject=candidates-biography'})",2
+0.012904366271875552,"frozenset({'party=unknown', 'subject=economy'})",2
+0.01184373342761181,"frozenset({'subject=education', 'party=unknown'})",2
+0.010252784161216192,"frozenset({'party=unknown', 'subject=elections'})",2
+0.011490189146190561,"frozenset({'party=unknown', 'subject=foreign-policy'})",2
+0.010076012020505568,"frozenset({'party=unknown', 'subject=guns'})",2
+0.02563196040304048,"frozenset({'subject=health-care', 'party=unknown'})",2
+0.015732720523245536,"frozenset({'party=unknown', 'subject=pundits'})",2
+0.01060632844263744,"frozenset({'party=unknown', 'subject=religion'})",2
+0.013788226975428673,"frozenset({'party=unknown', 'subject=taxes'})",2
+0.011136644864769313,"frozenset({'subject=candidates-biography', 'state=Florida'})",2
+0.014848859819692417,"frozenset({'subject=health-care', 'state=Florida'})",2
+0.01060632844263744,"frozenset({'subject=economy', 'state=Rhode Island'})",2
+0.011490189146190561,"frozenset({'state=Texas', 'subject=candidates-biography'})",2
+0.01060632844263744,"frozenset({'state=Texas', 'subject=education'})",2
+0.0132579105532968,"frozenset({'state=Texas', 'subject=health-care'})",2
+0.010252784161216192,"frozenset({'state=Texas', 'subject=immigration'})",2
+0.016970125508219906,"frozenset({'state=Unknown', 'subject=candidates-biography'})",2
+0.0176772140710624,"frozenset({'state=Unknown', 'subject=economy'})",2
+0.01060632844263744,"frozenset({'state=Unknown', 'subject=education'})",2
+0.013434682694007424,"frozenset({'state=Unknown', 'subject=elections'})",2
+0.010076012020505568,"frozenset({'state=Unknown', 'subject=environment'})",2
+0.013964999116139297,"frozenset({'state=Unknown', 'subject=federal-budget'})",2
+0.015025631960403041,"frozenset({'state=Unknown', 'subject=foreign-policy'})",2
+0.010429556301926816,"frozenset({'state=Unknown', 'subject=guns'})",2
+0.03376347887572918,"frozenset({'state=Unknown', 'subject=health-care'})",2
+0.011666961286901185,"frozenset({'state=Unknown', 'subject=history'})",2
+0.012020505568322432,"frozenset({'state=Unknown', 'subject=immigration'})",2
+0.013434682694007424,"frozenset({'state=Unknown', 'subject=jobs'})",2
+0.01414177125684992,"frozenset({'state=Unknown', 'subject=message-machine-2012'})",2
+0.015025631960403041,"frozenset({'state=Unknown', 'subject=pundits'})",2
+0.020505568322432385,"frozenset({'state=Unknown', 'subject=taxes'})",2
+0.010783100583348065,"frozenset({'state=Wisconsin', 'subject=jobs'})",2
+0.019268163337458018,"frozenset({'subject=state-budget', 'state=Wisconsin'})",2
+0.012197277709033056,"frozenset({'subject=crime', 'subject=criminal-justice'})",2
+0.012197277709033056,"frozenset({'subject=federal-budget', 'subject=deficit'})",2
+0.030581580342937953,"frozenset({'subject=economy', 'subject=jobs'})",2
+0.01184373342761181,"frozenset({'subject=economy', 'subject=taxes'})",2
+0.013434682694007424,"frozenset({'subject=state-budget', 'subject=education'})",2
+0.015202404101113665,"frozenset({'subject=environment', 'subject=energy'})",2
+0.011136644864769313,"frozenset({'subject=health-care', 'subject=federal-budget'})",2
+0.010076012020505568,"frozenset({'subject=foreign-policy', 'subject=military'})",2
+0.01237404984974368,"frozenset({'subject=terrorism', 'subject=foreign-policy'})",2
+0.015555948382534912,"frozenset({'subject=medicare', 'subject=health-care'})",2
+0.011666961286901185,"frozenset({'subject=health-care', 'subject=public-health'})",2
+0.011136644864769313,"frozenset({'subject=health-care', 'subject=taxes'})",2
+0.015202404101113665,"frozenset({'subject=state-budget', 'subject=state-finances'})",2
+0.012904366271875552,"frozenset({'subject=state-budget', 'subject=taxes'})",2
+0.012020505568322432,"frozenset({'party=democrat', 'state=Florida', 'label=barely-true'})",3
+0.013964999116139297,"frozenset({'party=democrat', 'state=Illinois', 'label=barely-true'})",3
+0.010252784161216192,"frozenset({'state=Unknown', 'party=democrat', 'label=barely-true'})",3
+0.010076012020505568,"frozenset({'party=democrat', 'subject=economy', 'label=barely-true'})",3
+0.0132579105532968,"frozenset({'party=democrat', 'subject=health-care', 'label=barely-true'})",3
+0.011313417005479937,"frozenset({'party=democrat', 'subject=taxes', 'label=barely-true'})",3
+0.026162276825172352,"frozenset({'party=republican', 'state=Florida', 'label=barely-true'})",3
+0.0132579105532968,"frozenset({'party=republican', 'state=New York', 'label=barely-true'})",3
+0.028460314654410464,"frozenset({'party=republican', 'state=Texas', 'label=barely-true'})",3
+0.024571327558776737,"frozenset({'state=Unknown', 'party=republican', 'label=barely-true'})",3
+0.01626303694537741,"frozenset({'party=republican', 'state=Wisconsin', 'label=barely-true'})",3
+0.012550821990454304,"frozenset({'party=republican', 'subject=candidates-biography', 'label=barely-true'})",3
+0.022626834010959874,"frozenset({'party=republican', 'subject=economy', 'label=barely-true'})",3
+0.012197277709033056,"frozenset({'party=republican', 'subject=education', 'label=barely-true'})",3
+0.01714689764893053,"frozenset({'party=republican', 'subject=federal-budget', 'label=barely-true'})",3
+0.011490189146190561,"frozenset({'party=republican', 'subject=foreign-policy', 'label=barely-true'})",3
+0.028460314654410464,"frozenset({'party=republican', 'subject=health-care', 'label=barely-true'})",3
+0.013434682694007424,"frozenset({'party=republican', 'subject=immigration', 'label=barely-true'})",3
+0.013964999116139297,"frozenset({'party=republican', 'subject=jobs', 'label=barely-true'})",3
+0.013611454834718048,"frozenset({'party=republican', 'subject=state-budget', 'label=barely-true'})",3
+0.022096517588828,"frozenset({'party=republican', 'subject=taxes', 'label=barely-true'})",3
+0.0390666430970479,"frozenset({'state=Unknown', 'party=unknown', 'label=barely-true'})",3
+0.010252784161216192,"frozenset({'state=Unknown', 'subject=health-care', 'label=barely-true'})",3
+0.013434682694007424,"frozenset({'subject=economy', 'subject=jobs', 'label=barely-true'})",3
+0.011666961286901185,"frozenset({'label=false', 'party=democrat', 'state=Florida'})",3
+0.016086264804666784,"frozenset({'label=false', 'party=democrat', 'state=Illinois'})",3
+0.012020505568322432,"frozenset({'state=Unknown', 'label=false', 'party=democrat'})",3
+0.010959872724058689,"frozenset({'label=false', 'party=democrat', 'state=Wisconsin'})",3
+0.010959872724058689,"frozenset({'label=false', 'party=democrat', 'subject=economy'})",3
+0.014672087678981793,"frozenset({'label=false', 'subject=health-care', 'party=democrat'})",3
+0.010076012020505568,"frozenset({'label=false', 'party=democrat', 'subject=jobs'})",3
+0.023510694714512993,"frozenset({'party=republican', 'label=false', 'state=Florida'})",3
+0.010959872724058689,"frozenset({'party=republican', 'state=Georgia', 'label=false'})",3
+0.02474809969948736,"frozenset({'party=republican', 'label=false', 'state=New York'})",3
+0.010959872724058689,"frozenset({'party=republican', 'label=false', 'state=Ohio'})",3
+0.02952094749867421,"frozenset({'party=republican', 'state=Texas', 'label=false'})",3
+0.024924871840197985,"frozenset({'state=Unknown', 'label=false', 'party=republican'})",3
+0.012020505568322432,"frozenset({'party=republican', 'state=Virginia', 'label=false'})",3
+0.02174297330740675,"frozenset({'party=republican', 'label=false', 'state=Wisconsin'})",3
+0.016439809086088032,"frozenset({'party=republican', 'label=false', 'subject=candidates-biography'})",3
+0.022980378292381122,"frozenset({'party=republican', 'label=false', 'subject=economy'})",3
+0.01237404984974368,"frozenset({'party=republican', 'subject=education', 'label=false'})",3
+0.01626303694537741,"frozenset({'party=republican', 'label=false', 'subject=elections'})",3
+0.020682340463143007,"frozenset({'party=republican', 'label=false', 'subject=federal-budget'})",3
+0.012904366271875552,"frozenset({'party=republican', 'label=false', 'subject=foreign-policy'})",3
+0.03217252960933357,"frozenset({'party=republican', 'label=false', 'subject=health-care'})",3
+0.010076012020505568,"frozenset({'party=republican', 'subject=history', 'label=false'})",3
+0.015555948382534912,"frozenset({'party=republican', 'label=false', 'subject=immigration'})",3
+0.0132579105532968,"frozenset({'party=republican', 'label=false', 'subject=jobs'})",3
+0.015732720523245536,"frozenset({'party=republican', 'subject=state-budget', 'label=false'})",3
+0.02333392257380237,"frozenset({'party=republican', 'label=false', 'subject=taxes'})",3
+0.05515290790171469,"frozenset({'state=Unknown', 'label=false', 'party=unknown'})",3
+0.01237404984974368,"frozenset({'state=Unknown', 'label=false', 'subject=health-care'})",3
+0.0132579105532968,"frozenset({'label=false', 'subject=economy', 'subject=jobs'})",3
+0.012197277709033056,"frozenset({'party=republican', 'state=New York', 'label=pants-fire'})",3
+0.013611454834718048,"frozenset({'party=republican', 'state=Texas', 'label=pants-fire'})",3
+0.014318543397560545,"frozenset({'party=republican', 'subject=health-care', 'label=pants-fire'})",3
+0.05479936362029344,"frozenset({'state=Unknown', 'party=unknown', 'label=pants-fire'})",3
+0.011136644864769313,"frozenset({'state=Unknown', 'subject=health-care', 'label=pants-fire'})",3
+0.011313417005479937,"frozenset({'party=republican', 'subject=health-care', 'state=Florida'})",3
+0.011136644864769313,"frozenset({'party=republican', 'state=Texas', 'subject=health-care'})",3
+0.010959872724058689,"frozenset({'party=republican', 'subject=state-budget', 'state=Wisconsin'})",3
+0.017500441930351777,"frozenset({'party=republican', 'subject=economy', 'subject=jobs'})",3
+0.010783100583348065,"frozenset({'state=Unknown', 'party=unknown', 'subject=candidates-biography'})",3
+0.021035884744564255,"frozenset({'state=Unknown', 'subject=health-care', 'party=unknown'})",3
+0.013611454834718048,"frozenset({'state=Unknown', 'party=unknown', 'subject=pundits'})",3
