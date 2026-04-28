@@ -1,148 +1,115 @@
-# LIAR Dataset - Data Mining Project
+# Truth-Risk Intelligence: Detecting Low-Truth Political Claims with Text and Context
+
+**Final curated notebook:** [`main_notebook.ipynb`](main_notebook.ipynb)
 
 ## Overview
+This repository contains a data mining project on the LIAR dataset (PolitiFact fact-checked political statements). The project investigates whether combining text representations with speaker/topic context improves detection of low-truth claims, while reducing speaker memorization bias. The repo is organized to be reproducible and easy to navigate for final deliverable review.
 
-This project explores the LIAR dataset, a collection of 12,791 political statements labeled with six levels of truthfulness from the PolitiFact fact-checking archive. The goal is to apply core data mining techniques while extending analysis with modern NLP and representation learning.
+## Research Questions
+1. Can combining text embeddings with speaker-graph context improve low-truth detection?
+2. Do gains remain under speaker-disjoint evaluation (less memorization risk)?
+3. Which modeling strategy performs best in practice (benchmark models vs transformer fine-tuning vs tuned fusion vs ensemble)?
 
-Research question:
+## Project Video
+- YouTube link (2-minute project ad): **[Here](https://www.youtube.com/watch?v=sFUm1Elq3Nc)**
 
-**How can combining text embeddings and speaker-graph embeddings improve detection of low-truth statements in LIAR, while controlling for speaker memorization bias?**
+## Data
+### LIAR dataset
+- Source: PolitiFact fact-checking archive
+- Dataset paper: Wang, 2017 (“Liar, Liar Pants on Fire”)
+- Local files used:
+  - `data/raw/train.tsv`
+  - `data/raw/valid.tsv`
+  - `data/raw/test.tsv`
 
-## Dataset
+### Preprocessing performed
+- Normalize/clean key metadata fields (state, party groups).
+- Build binary target `is_low_truth` from LIAR truth labels.
+- Generate text features:
+  - TF-IDF
+  - Sentence embeddings (MiniLM, BERT)
+- Build speaker-subject graph embeddings.
+- Save intermediate/final artifacts in `data/interim` and `data/processed`.
 
-Source: PolitiFact Fact-Checking Archive  
-Introduced in: Wang, W. Y. (2017). “Liar, Liar Pants on Fire”
-
-Primary LIAR files:
-
-- `data/raw/train.tsv`
-- `data/raw/valid.tsv`
-- `data/raw/test.tsv`
-- `data/processed/processed_liar.csv`
-
-## Repository Structure
-
-- `configs/`: central pipeline configuration (`configs/liar_research.yaml`)
-- `scripts/`: runnable analysis pipeline scripts (`01` to `13`)
-- `src/liar_mining/`: shared utilities for I/O, preprocessing, and modeling
-- `notebooks/`: EDA and research analysis notebooks
-- `data/interim/`: intermediate generated artifacts
-- `data/processed/`: processed tables and metrics
-- `models/`: model/vectorizer artifacts
-- `reports/figures/`: exported plots
-
-## Setup
-
+## How to Reproduce
+### 1) Environment
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Windows (PowerShell):
-
+Windows PowerShell:
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r .\requirements.txt
 ```
 
-## Pipeline Execution Order
-
-Run from the project root:
-
-```bash
-python scripts/01_prepare_liar.py
-python scripts/02_text_embeddings.py --method tfidf
-python scripts/03_graph_embeddings.py
-python scripts/04_frequent_itemsets.py
-python scripts/05_clustering.py --embedding-source text
-python scripts/05_clustering.py --embedding-source fused
-python scripts/06_lsh_near_duplicates.py
-python scripts/07_anomaly_detection.py
-python scripts/08_stream_drift.py
-python scripts/09_fusion_model.py
-```
-
-Or run the full pipeline:
-
+### 2) Run core pipeline
 ```bash
 bash scripts/run_pipeline.sh
 ```
 
 Windows:
-
 ```powershell
 scripts\run_pipeline.bat
 ```
 
-Optional dense embeddings:
+### 3) Open final notebook
+- Run `main_notebook.ipynb` for the curated final narrative.
 
-```bash
-python scripts/02_text_embeddings.py --method sentence --model all-MiniLM-L6-v2
+## Key Dependencies
+- Python 3.11
+- pandas>=2.0
+- numpy>=1.24
+- scikit-learn>=1.3
+- matplotlib>=3.7
+- seaborn>=0.12
+- networkx>=3.1
+- pyarrow>=14.0
+- sentence-transformers>=3.0
+- transformers>=4.40
+- torch>=2.2
+- accelerate>=1.1.0
+
+## Repository Structure
+```text
+.
+├── main_notebook.ipynb
+├── README.md
+├── requirements.txt
+├── checkpoints/
+│   ├── checkpoint_1.ipynb
+│   └── checkpoint_2.ipynb
+├── notebooks/
+│   ├── 01_data_validation.ipynb
+│   ├── 02_patterns_graph_text.ipynb
+│   ├── 03_model_comparison.ipynb
+│   ├── 04_stream_and_drift.ipynb
+│   └── question_and_hypotheses.ipynb
+├── scripts/
+│   ├── 01_prepare_liar.py
+│   ├── ...
+│   ├── 13_probability_ensemble.py
+│   ├── run_pipeline.sh
+│   └── run_pipeline.bat
+├── src/liar_mining/
+├── data/
+│   ├── raw/
+│   ├── interim/
+│   └── processed/
+├── reports/figures/
+└── assets/
 ```
 
-Embedding + classifier benchmark (TF-IDF vs MiniLM vs BERT, across multiple classifiers):
-
-```bash
-python scripts/10_embedding_benchmark.py
-```
-
-Advanced additions to directly strengthen the research question answer:
-
-```bash
-# 1) Fine-tuned transformer text classifier
-python scripts/11_finetune_transformer.py --model-name bert-base-uncased
-
-# 2) Tuned tabular fused model (text + graph + metadata)
-python scripts/12_tuned_tabular_fusion.py --text-file text_embeddings_sentence_bert-base-uncased.parquet
-
-# 3) Ensemble + threshold optimization across model predictions
-python scripts/13_probability_ensemble.py
-```
-
-## Techniques Used
-
-- Frequent Itemset Mining: Apriori + association rules
-- Graph Mining: speaker-subject bipartite graph
-- Graph Embeddings: Node2Vec speaker/subject representations
-- Text Mining: TF-IDF or sentence embeddings
-- Clustering: KMeans on text/graph/fused embeddings
-- LSH: MinHash near-duplicate detection
-- Anomaly Detection: Isolation Forest on fused features
-- Stream Mining: split-based drift analysis
-- Predictive Modeling: text-only vs text+graph low-truth classification
-- Transformer Fine-Tuning: sequence classification on LIAR statements
-- Tuned Tabular Fusion: boosted tree model over text+graph+metadata
-- Ensemble Optimization: weighted probability fusion + threshold tuning
-
-## Key Outputs
-
-- `data/processed/liar_base.parquet`
-- `data/interim/text_embeddings_*.parquet`
-- `data/interim/graph_embeddings.parquet`
-- `data/processed/itemsets_*.csv` and `data/processed/rules_*.csv`
-- `data/processed/clusters_*.parquet`
-- `data/processed/clusters_*_quality_metrics.json`
-- `data/processed/clusters_*_projection.parquet`
-- `data/processed/near_duplicate_pairs.csv`
-- `data/processed/near_duplicate_pairs_filtered.csv`
-- `data/processed/anomaly_claims.parquet`
-- `data/processed/anomaly_speakers_min_claims.csv`
-- `data/processed/stream_drift_summary.csv`
-- `data/processed/fusion_model_metrics.json`
-- `data/processed/embedding_classifier_model_comparison.csv`
-- `data/processed/transformer_finetune_metrics_*.json`
-- `data/processed/tuned_tabular_fusion_metrics_*.json`
-- `data/processed/ensemble_threshold_metrics.json`
-- `data/processed/fusion_model_confusion_matrices.csv`
-- `data/processed/fusion_model_curve_points.csv`
-- `data/processed/fusion_model_threshold_sweep.csv`
-- `reports/figures/clusters_*_by_*.png`
+## Results Summary
+- Fusion of text + graph context improves robustness over text-only models on average.
+- Best benchmark results come from BERT-based embeddings with linear/logistic models under speaker-disjoint evaluation.
+- Tuned tabular fusion model achieved the strongest final performance in this repo state.
+- Ensemble threshold optimization provides a practical operating point for deployment-style triage.
 
 ## Notes
-
-- The pipeline is modular; each script can run independently.
-- `scripts/run_pipeline.*` runs all stages (`01` to `13`) including compute-heavy transformer fine-tuning.
-- Existing original project files are preserved.
-
+- Checkpoint notebooks are preserved under `checkpoints/`.
+- Supporting notebooks/scripts are included for reproducibility.
+- Large generated artifacts in `data/interim` and `data/processed` may be regenerated from scripts.

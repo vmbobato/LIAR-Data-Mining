@@ -1,3 +1,46 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+
+# Model artifacts / binaries
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.joblib
+*.pickle
+*.pkl
+
+# Large generated outputs (reproducible)
+data/interim/
+models/
+reports/figures/
+
+# Optional processed exports that can be regenerated
+# Uncomment if you want a lighter repo:
+# data/processed/
+
+# Non-project datasets from other tracks (keep repo focused on LIAR)
 CFG/
 BitcoinHeistData.csv
 dataset_fraud.xlsx
@@ -6,5 +49,9 @@ PDF_All_Features.csv
 Word_All_Features.csv
 RT_IOT2022
 
-eda_*
+# Office/media artifacts
+*.pptx
 *.docx
+
+# Test cache
+.pytest_cache/
